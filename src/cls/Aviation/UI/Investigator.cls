@@ -27,7 +27,9 @@ Include %IKInclude
 /// 
 /// <p>To set up the demo, run the following command from the terminal:
 /// <blockquote><pre>do ##class(Aviation.UI.Investigator).Setup()</pre></blockquote></p>
-Class Aviation.UI.Investigator Extends %ZEN.Component.page
+/// <p>Please note the InterSystems IRIS NLP capability (formerly known as iKnow) is 
+/// <a href="https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GIKNOW_intro">deprecated</a></p>.
+Class Aviation.UI.Investigator Extends %ZEN.Component.page [ Deprecated ]
 {
 
 /// Displayed name of this page.

@@ -1,6 +1,4 @@
-ARG IMAGE=intersystems/iris:2019.1.0S.111.0
-ARG IMAGE=store/intersystems/iris-community:2019.3.0.309.0
-ARG IMAGE=store/intersystems/iris-community:2019.4.0.379.0
+ARG IMAGE=containers.intersystems.com/intersystems/iris-community:latest-preview
 ARG IMAGE=intersystemsdc/iris-community:latest
 FROM $IMAGE
 

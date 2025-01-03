@@ -21,6 +21,9 @@ Include %IKPublic
 ///  <a href="http://www.ntsb.gov/" target="_blank">http://www.ntsb.gov</a>. This data is supplied
 ///  here for demonstration purposes only and neither intended nor warranted to be accurate.<br/>
 ///  	Courtesy: National Transportation Safety Board</p>
+/// 
+/// <p>Please note the InterSystems IRIS NLP capability (formerly known as iKnow) is 
+/// <a href="https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GIKNOW_intro">deprecated</a></p>.
 Class Aviation.Utils Extends %RegisteredObject
 {
 
@@ -81,7 +84,9 @@ ClassMethod SetupCube() As %Status
 /// <p>Sets up a regular iKnow domain and loads the Aviation demo dataset into it by calling the 
 /// <class>Aviation.ReportDomain</class> %Build() method after enabling it and configuring CSP access
 /// to %iKnow UI classes for the SAMPLES web application.</p>
-ClassMethod SetupStandalone(pLoadTermLists As %Boolean = 1, pVerbose As %Boolean = 1) As %Status
+/// <p>Please note the InterSystems IRIS NLP capability (formerly known as iKnow) is 
+/// <a href="https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GIKNOW_intro">deprecated</a></p>.
+ClassMethod SetupStandalone(pLoadTermLists As %Boolean = 1, pVerbose As %Boolean = 1) As %Status [ Deprecated ]
 {
 	set namespace = $ZNspace
 	set app = $System.CSP.GetDefaultApp(namespace) _ "/"
@@ -113,7 +118,9 @@ ClassMethod SetupStandalone(pLoadTermLists As %Boolean = 1, pVerbose As %Boolean
 /// pseudo-form, so they can be used both for building Term Lists (see
 /// <method>CreateTermLists</method>) and iKnow Dictionaries
 /// (<method>CreateIKnowDictionaries</method>).
-ClassMethod GetAviationDictionaries(Output pDictionaries) As %Status [ Internal ]
+/// <p>Please note the InterSystems IRIS NLP capability (formerly known as iKnow) is 
+/// <a href="https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GIKNOW_intro">deprecated</a></p>.
+ClassMethod GetAviationDictionaries(Output pDictionaries) As %Status [ Internal, Deprecated ]
 {
 	kill pDictionaries 
     s pDictionaries(1) = "Maneuvres"
@@ -288,7 +295,9 @@ ClassMethod CreateTermLists() As %Status
 /// are selected randomly from the full database. With <var>pSkipWhenEmpty</var>, a list of properties
 /// of the event, aircraft and crew records can be supplied which needs to be non-null for the record
 /// to be selected.</p>
-ClassMethod LoadFromNTSB(pDSN As %String = "AviationAccess", pMaxRecords As %Integer = 1200, pClearFirst As %Boolean = 1, pVerbose As %Boolean = 1, pSkipWhenEmpty As %List = {$lb($lb("NarrativeFull","LocationCoordsLongitude","InjuriesHighest","MidAir","SkyConditionNonCeiling"),$lb("Damage","AircraftCategory","FlightType"))}, pWhereClause As %String = "", pPrefList As %List = {$lb("20020611X00850","20030728X01207","20010123X00341")}) As %Status
+/// <p>Please note the InterSystems IRIS NLP capability (formerly known as iKnow) is 
+/// <a href="https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GIKNOW_intro">deprecated</a></p>.
+ClassMethod LoadFromNTSB(pDSN As %String = "AviationAccess", pMaxRecords As %Integer = 1200, pClearFirst As %Boolean = 1, pVerbose As %Boolean = 1, pSkipWhenEmpty As %List = {$lb($lb("NarrativeFull","LocationCoordsLongitude","InjuriesHighest","MidAir","SkyConditionNonCeiling"),$lb("Damage","AircraftCategory","FlightType"))}, pWhereClause As %String = "", pPrefList As %List = {$lb("20020611X00850","20030728X01207","20010123X00341")}) As %Status [ Deprecated ]
 {
 	set tSC = $$$OK
 	try {

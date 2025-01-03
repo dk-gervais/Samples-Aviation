@@ -1,5 +1,7 @@
 /// Use or operation of this code is subject to acceptance of the license available in the code repository for this code.
 /// 
+/// <p>Please note the InterSystems IRIS NLP capability (formerly known as iKnow) is 
+/// <a href="https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GIKNOW_intro">deprecated</a></p>.
 Class Aviation.Cubes.Events Extends %DeepSee.CubeDefinition [ CompileAfter = Aviation.KPI.Actions, DependsOn = Aviation.Event, ProcedureBlock ]
 {
 

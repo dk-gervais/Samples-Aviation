@@ -7,7 +7,9 @@
 /// <a href="http://www.ntsb.gov/" target="_blank">http://www.ntsb.gov</a>. This data is supplied
 /// here for demonstration purposes only and neither intended nor warranted to be accurate.<br/>
 /// Courtesy: National Transportation Safety Board</p>
-Class Aviation.ReportDomain Extends %iKnow.DomainDefinition
+/// <p>Please note the InterSystems IRIS NLP capability (formerly known as iKnow) is 
+/// <a href="https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GIKNOW_intro">deprecated</a></p>.
+Class Aviation.ReportDomain Extends %iKnow.DomainDefinition [ Deprecated ]
 {
 
 XData Domain [ XMLNamespace = "http://www.intersystems.com/iknow" ]

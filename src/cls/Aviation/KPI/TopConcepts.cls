@@ -1,5 +1,7 @@
 /// Use or operation of this code is subject to acceptance of the license available in the code repository for this code.
-Class Aviation.KPI.TopConcepts Extends %iKnow.DeepSee.GenericKPI
+/// <p>Please note the InterSystems IRIS NLP capability (formerly known as iKnow) is 
+/// <a href="https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GIKNOW_intro">deprecated</a></p>.
+Class Aviation.KPI.TopConcepts Extends %iKnow.DeepSee.GenericKPI [ Deprecated ]
 {
 
 ///  Override this parameter and <parameter>IKMEASURENAME</parameter> to specify the iKnow

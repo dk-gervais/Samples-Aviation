@@ -13,6 +13,8 @@ After setup, the data is available for use in various ways:
   The repo also contains specific samples related to NLP.
 * For use with [InterSystems IRIS SQL Search](http://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GSQLSRCH).
 * For use with [Text Analytics options in InterSystems IRIS Business Intelligence](http://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=D2MODADV_ch_iknow).
+
+> :warning: Please note the InterSystems IRIS NLP capability (formerly known as iKnow) is [deprecated](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GIKNOW_intro).
   
 The repo also contains specific samples related to these options.
 
@@ -34,11 +36,11 @@ The repo also contains specific samples related to these options.
 * The `Aviation.Utils` class is a helper classes used by the repo setup routine (see end).
 
 ### Samples using InterSystems IRIS Natural Language Processing (NLP) 
-* The `Aviation.ReportDomain` class defines a sample NLP domain based on the data
-  from this repo. You can run NLP queries against this domain. See [Using InterSystems IRIS Natural Language Processing](http://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GIKNOW).
 
-* The `Aviation.Classification.Utils` class illustrates how to build and test Text 
-  Categorization models programmatically. See [Text Categorization](http://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GIKNOW_textcat).
+> :warning: Please note the InterSystems IRIS NLP capability (formerly known as iKnow) is [deprecated](https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GIKNOW_intro).
+
+The `Aviation.ReportDomain` class defines a sample NLP domain based on the data
+from this repo. You can run NLP queries against this domain. See [Using InterSystems IRIS Natural Language Processing](http://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GIKNOW).
 
 The InterSystems IRIS Natural Language Processing technology is also available for standalone use. [Click here](https://github.com/intersystems/iknow) to learn more.
 
